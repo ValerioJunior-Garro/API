@@ -33,5 +33,5 @@ Esta é uma API RESTful desenvolvida em ASP.NET Core para gerenciar materiais de
 
 1. Clone o repositório:
    ```bash
-   git clone https://seu-repo.git
+   git clone [https://seu-repo.git](https://github.com/ValerioJunior-Garro/API.git)
    cd MateriaisConstrucao
