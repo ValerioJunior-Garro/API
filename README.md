@@ -1,37 +1,44 @@
-# API
-# 🏗️ Materiais de Construção API
+# 🏗️ API - Materiais de Construção
 
-Esta é uma API RESTful desenvolvida em ASP.NET Core para gerenciar materiais de construção. Ela permite realizar operações CRUD (Create, Read, Update, Delete) sobre os materiais cadastrados em um banco de dados.
+API RESTful desenvolvida em ASP.NET Core para gerenciar materiais de construção. Permite cadastrar, listar, atualizar e remover materiais — **sem necessidade de banco de dados**. Os dados são armazenados temporariamente em memória.
+
+---
+
+## 📂 Repositório Oficial
+
+🔗 GitHub: [https://github.com/ValerioJunior-Garro/API.git](https://github.com/ValerioJunior-Garro/API.git)
+
+---
 
 ## 🚀 Tecnologias Utilizadas
 
 - [.NET 6 ou superior](https://dotnet.microsoft.com/)
-- ASP.NET Core
-- Entity Framework Core
-- SQLite (ou substituível por outro banco via EF Core)
-- Swagger (para documentação da API)
+- ASP.NET Core Web API
+- Swagger (documentação da API)
+
+---
 
 ## 📁 Estrutura do Projeto
 
-- `Controllers/MaterialController.cs`: Controlador com os endpoints da API.
-- `Models/Material.cs`: Modelo que representa um material de construção.
-- `Data/AppDbContext.cs`: Contexto de banco de dados com EF Core.
-- `Program.cs`: Configuração e inicialização da aplicação.
-- `MateriaisConstrucao.csproj`: Arquivo de projeto do .NET.
+- `Controllers/MaterialController.cs`: Controlador principal com endpoints da API.
+- `Models/Material.cs`: Modelo de dados da entidade `Material`.
+- `Program.cs`: Arquivo de inicialização e configuração do app.
 
-## 📦 Endpoints da API
+---
 
-| Método | Rota                  | Descrição                          |
-|--------|-----------------------|-------------------------------------|
-| GET    | `/api/material`       | Lista todos os materiais           |
-| GET    | `/api/material/{id}`  | Retorna um material específico     |
-| POST   | `/api/material`       | Cria um novo material              |
-| PUT    | `/api/material/{id}`  | Atualiza os dados de um material   |
-| DELETE | `/api/material/{id}`  | Remove um material do sistema      |
+## 🛠️ Como Executar a API Localmente
 
-## 🛠️ Como Executar Localmente
+### ✅ Pré-requisitos
 
-1. Clone o repositório:
+- [.NET 6 SDK ou superior](https://dotnet.microsoft.com/en-us/download/dotnet)
+- Um editor de código como Visual Studio, VS Code ou terminal com CLI do .NET
+
+---
+
+### 📌 Passo a Passo para Executar
+
+1. **Clone o repositório:**
+
    ```bash
    git clone https://github.com/ValerioJunior-Garro/API.git
-   cd MateriaisConstrucao
+   cd API
